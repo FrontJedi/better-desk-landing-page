@@ -1,0 +1,109 @@
+.footer {
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-up {
+        display: flex;
+        padding: 80px 275px 60px 265px;
+        background: #1f2532;
+
+        &__desk {
+            &-title {
+                display: flex;
+                justify-content: center;
+               
+
+                .logo {
+                    margin-right: 10px;
+                }
+                & > h3 {
+                    font-family: "ABeeZee";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 0.88;
+                    color: #ffffff;
+                }
+            }
+
+            &-subtitle {
+                margin-top: 25px;
+
+                & > p,
+                & > p > a {
+                    font-family: "ABeeZee";
+                    font-style: italic;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 1.6;
+                    color: #ffffff;
+                    mix-blend-mode: normal;
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        &__about {
+            margin-left: 105px;
+        }
+
+        &__support {
+            margin-left: 95px;
+        }
+
+        &__contact {
+            margin-left: 70px;
+        }
+
+        .footer-up__title > h3 {
+            font-family: "ABeeZee";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 1.1;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        .footer-up__subtitle {
+            margin-top: 20px;
+        }
+
+        .footer-up__subtitle > p,
+        .footer-up__subtitle > p > a {
+            font-family: "ABeeZee";
+            font-style: italic;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 2.33;
+            color: #ffffff;
+            mix-blend-mode: normal;
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+        &__social {
+            margin-left: 140px;
+        }
+    }
+
+    &-down {
+        padding: 35px 265px;
+        background: #3e3e58;
+
+        & > p,
+        & > p > a {
+            font-family: "ABeeZee";
+            font-style: italic;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 2;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

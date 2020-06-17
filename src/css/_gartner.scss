@@ -1,0 +1,46 @@
+.gartner {
+    max-width: 1440px;
+    width: 100%;
+    background: linear-gradient(173.7deg, #1172d0 6.2%, #1d98d6 99.82%);
+    padding: 40px 170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    &__info {
+        &-text > p {
+            font-family: "ABeeZee";
+            font-style: italic;
+            font-weight: normal;
+            font-size: 28px;
+            line-height: 1.2;
+            color: #ffffff;
+        }
+
+        &-link {
+            margin-top: 20px;
+
+            & > a {
+                font-family: "ABeeZee";
+                font-style: italic;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 1.2;
+                text-decoration-line: underline;
+                color: #ffffff;
+            }
+        }
+    }
+
+    &__logo-name {
+        & > p {
+            font-family: "ABeeZee";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 75px;
+            line-height: 1.2;
+
+            color: #ffffff;
+        }
+    }
+}

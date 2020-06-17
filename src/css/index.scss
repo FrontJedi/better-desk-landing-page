@@ -1,0 +1,17 @@
+@import "reset";
+@import '_footer.scss';
+@import "_better-desk.scss";
+@import "_board-link.scss";
+@import "_gartner.scss";
+@import "_more-about-us.scss";
+@import "_sign-up.scss";
+@import "_support-service.scss";
+@import "_video-info.scss";
+@import "banner/banner-header";
+@import "banner/banner";
+@import "form/subscribe-form";
+@import "logo";
+
+body {
+    font-family: sans-serif;
+}

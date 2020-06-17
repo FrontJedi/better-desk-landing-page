@@ -1,0 +1,311 @@
+.better-desk {
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    padding: 80px 170px 90px 156px;
+    margin: 35px auto;
+    background: linear-gradient(147.56deg, #3dbdb6 5.64%, #0089ce 100%);
+
+    &__info {
+        &-title {
+            display: flex;
+            justify-content: center;
+
+            & > span {
+                font-family: "ABeeZee";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 40px;
+                line-height: 1.2;
+                color: #ffffff;
+            }
+        }
+
+        &-subtitle {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+
+            & > p {
+                font-family: "ABeeZee";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 1.56;
+                text-align: center;
+                color: #ffffff;
+            }
+        }
+    }
+
+    &__container {
+        display: flex;
+        margin-top: 60px;
+
+        &-support {
+            width: 505px;
+            height: auto;
+            margin-top: 45px;
+
+            .container-support__info {
+                background: rgba(24, 144, 164, 0.5);
+                box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.0965523);
+                border-radius: 3px;
+                padding-top: 35px;
+
+                &-title {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 35px;
+
+                    & > span {
+                        font-family: "ABeeZee";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 2.8;
+                        color: #ffffff;
+                    }
+                }
+
+                &-subtitle {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 18px;
+                    padding-bottom: 15px;
+
+                    & > p {
+                        font-family: "ABeeZee";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 1.43;
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            .container-support__text {
+                display: flex;
+                align-items: center;
+                margin-left: 35px;
+                margin-top: 70px;
+
+                & > p {
+                    font-family: "ABeeZee";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 2.8;
+                    color: #0b5e6e;
+                }
+            }
+        }
+
+        &-todolist {
+            width: 550px;
+            height: auto;
+            margin-left: 90px;
+            background: #ffffff;
+            border-radius: 8px;
+
+            .container-todolist__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 40px;
+                background: #f5f9fc;
+
+                &-list {
+                    display: flex;
+
+                    &--counter {
+                        width: 50px;
+                        height: 30px;
+                        margin-left: 10px;
+                        background: #20bbef;
+                        border-radius: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        & > span {
+                            font-family: Open Sans;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 20px;
+                            line-height: 1.35;
+                            color: #ffffff;
+                        }
+                    }
+
+                    & > span {
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 27px;
+                        color: #3d4d65;
+                    }
+                }
+            }
+
+            .container-todolist__btn-add {
+                width: 90px;
+                height: 40px;
+                background: #20bbef;
+                border: 1px solid #dadfe5;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & > span {
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 1.4;
+                    color: #ffffff;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .container-todolist__list {
+            position: relative;
+
+            .list {
+                position: relative;
+                display: flex;
+                margin-top: 25px;
+                margin-left: 75px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    top: 8px;
+                    left: -40px;
+                    border-radius: 50%;
+                }
+
+                &:not(:first-child)::after {
+                    content: "";
+                    position: absolute;
+                    width: 2px;
+                    height: calc(100% + 24px);
+                    top: -50px;
+                    left: -34px;
+                }
+
+                &-first::before,
+                &-first::after {
+                    background: #f5474a;
+                }
+
+                &-second::before,
+                &-second::after {
+                    background: #f5474a;
+                }
+
+                &-third::before,
+                &-third::after {
+                    background: #f38428;
+                }
+
+                &-fourth::before,
+                &-fourth::after {
+                    background: #f38428;
+                }
+
+                &-fifth::before,
+                &-fifth::after {
+                    background: #20bbef;
+                }
+
+                &-item__info {
+                    position: relative;
+
+                    &-data {
+                        & > p {
+                            font-family: "Open Sans";
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 15px;
+                            line-height: 1.7;
+                            color: #54657e;
+                        }
+                    }
+
+                    &-text {
+                        & > p {
+                            font-family: "Open Sans";
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 1.4;
+                            color: #606d78;
+                        }
+                    }
+                }
+
+                [type="checkbox"] {
+                    display: none;
+
+                    &:checked ~ .checkbox-round {
+                        border: 2px solid #dadfe5;
+                    }
+
+                    &:checked ~ .list-item__info {
+                        text-decoration-line: line-through;
+                        color: #606d78;
+                        mix-blend-mode: normal;
+                        opacity: 0.6;
+                    }
+
+                    &:checked ~ .checkbox-round > img {
+                        display: block;
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                    }
+
+                    &:checked ~ .list-item {
+                        content: "";
+                        background-color: green;
+                    }
+                }
+
+                .checkbox-round {
+                    position: absolute;
+                    top: 0;
+                    left: 400px;
+                    width: 32px;
+                    height: 32px;
+                    border: 2px solid #20bbef;
+                    border-radius: 50%;
+
+                    & > img {
+                        display: none;
+                    }
+                }
+            }
+
+            .list:last-child {
+                margin-bottom: 40px;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 7px;
+                height: 195px;
+                background: #e9edf2;
+                border-radius: 5px;
+                right: 5px;
+            }
+        }
+    }
+}
